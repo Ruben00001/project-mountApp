@@ -1,0 +1,9 @@
+<% include ../partials/header %>
+
+<h1>Edit Comment</h1>
+
+<form class="form--login" action='/mountains/<%= mountain_id %>/comments/<%= comment._id %>?_method=PUT' method='POST'>
+  <textarea class="input-group-text edit-comment-textarea" name='comment[text]'><%= comment.text %></textarea>
+  <input class="btn btn-light" type='submit' value='Submit'>
+</form> 
+

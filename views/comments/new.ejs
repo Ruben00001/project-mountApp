@@ -1,0 +1,10 @@
+<% include ../partials/header %>
+
+<h1>Create a new comment for <%= mountain.name %></h1>
+
+<form class="form--login" action='/mountains/<%= mountain._id %>/comments' method='POST'>
+  <input class="input-group-text" type='text' placeholder='text' name='comment[text]'>
+  <input class="btn btn-light" type='submit' value='Submit'>
+</form>
+
+<% include ../partials/footer %>

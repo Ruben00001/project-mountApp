@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  display: block;
+}
+
+.body-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* NAVBAR ************************************ */
+.fa-mountain {
+  font-size: 22px;
+}
+
+.header-links {
+  color: #ED3426;
+}
+
+.header-links:hover {
+  color: #F7A7A1;
+}
+
+/* HOME PAGE ********************************* */
+
+.container--home {
+  background-image: url("./img/john-rodenn-castillo-504121-unsplash.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  margin-bottom: 25px;
+}
+
+.sub-heading--home {
+  padding-top: 40px;
+  color: white;
+}
+
+.fa-door-open {
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+/* MOUNTAINS *********************************** */
+
+.container--mountains {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+
+.container--mountains-welcome {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.container--mountains-welcome > p {
+  line-height: 1.8;
+}
+
+.title--mountains {
+  margin-bottom: 30px;
+}
+
+.login-for-new-entry {
+  font-size: 15px;
+  font-style: italic;
+  text-align: right;
+}
+
+.login-for-new-entry a {
+  color: black;
+  font-weight: bold;
+}
+
+.mountain-thumbnail-title {
+  text-align: left;
+  padding-left: 4px;
+  font-size: 17px;
+  margin: 0;
+  font-weight: 500;
+  color: black;
+}
+
+.mountain-thumbnail-desc {
+  text-align: left;
+  font-size: 15px;
+  color: rgb(22, 22, 22);
+  padding-left: 4px;
+}
+
+.read-more {
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+/* SHOW *********************************** */
+
+.container--image--show {
+  width: 90%;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.image--show {
+  width: 100%;
+  object-fit: cover;
+}
+
+.show-description-container {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.show-info-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitted-by {
+  font-size: 15px;
+}
+
+.make-comment {
+  text-align: right;
+  font-style: italic;
+}
+
+.make-comment a {
+  color: rgb(22, 22, 22);
+}
+
+.fa-plus {
+  color: rgb(22, 22, 22);
+  font-size: 11px;
+}
+
+.comments-container {
+  text-align: left;
+}
+
+.show-comment {
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 18px;
+}
+
+.fa-user {
+  font-size: 17px;
+}
+
+.show-comment span {
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+
+.show-comment-edit-buttons {
+  text-align: center;
+  font-size: 12px;
+}
+
+.show-edit-comment {
+  display: inline-block;
+  color: grey;
+}
+
+.show-delete-comment-form {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.show-delete-comment {
+  border: none;
+  background: none;
+  color: grey;
+}
+
+/* LOGIN *********************************** */
+
+.form--login {
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form--login input {
+  width: 400px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* EDIT COMMENT *********************************** */
+
+.edit-comment-textarea {
+  width: 100%;
+  height: 200px;
+  word-wrap: normal;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+/* FLASH ERROR *********************************** */
+
+.flash-error-container {
+  width: 70%;
+  border: 1px solid red;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.flash-error-container p {
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 0;
+}

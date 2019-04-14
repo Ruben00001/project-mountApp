@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+<div class='container--mountains'>
+    <div class="container--mountains-welcome">
+      <h1 class="title--mountains">A Catalogue of Wondrous Mountains</h1>
+      <p>As decided by our intrepid members, here are the most beautiful and <br/> striking mountains from almost every corner of the world</p>
+      <% if(!currentUser) { %>
+        <p class="login-for-new-entry">(<a href='/login'>login</a> to add new entry)</p>
+      <% } else { %>
+        <p>
+        <a class='btn btn-large btn-primary' href='/mountains/new'>Add new mountain</a>
+        </p>
+      <% } %>
+    </div>
+
+  <div class='row'>
+    <% mountains.forEach((mountain) => { %>
+      <div class='col-md-3 col-sm-6'>
+        <div class='mountain-thumbnail-container'>
+          <a href='/mountains/<%= mountain._id %>'>
+            <img src='<%= mountain.image %>'>
+            <p class='mountain-thumbnail-title'><%= mountain.name %></p>
+            <p class="mountain-thumbnail-desc"><%= mountain.description.slice(0,27) %>...<span class="read-more">read more</span></p>
+          </a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+
+<% include ../partials/footer %>

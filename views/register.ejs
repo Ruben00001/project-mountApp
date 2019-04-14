@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<% if (flashError && flashError.length > 0) { %>
+  <div class="flash-error-container">
+    <p><%= flashError %></p>
+  </div>
+<% } %>
+
+<h1>Register</h1>
+
+<form class="form--login" action='/register' method='POST'>
+  <input class="input-group-text" type='text' name='username' placeholder='username'>
+  <input class="input-group-text" type='password' name='password' placeholder='password'>
+  <input class="btn btn-light" type='submit' value='Submit'>
+</form>
+
+<% include partials/footer %>

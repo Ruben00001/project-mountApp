@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+<h1>Create a new mountain entry</h1>
+
+<form class="form--login" action='/mountains' method='POST'>
+  <input class="input-group-text" type='text' placeholder='mountain name' name='name'>
+  <input class="input-group-text" type='text' placeholder='image url' name='image'>
+  <input class="input-group-text" type='text' placeholder='description' name='description'>
+  <input class="btn btn-light" type='submit' value='Submit'>
+</form>
+
+<% include ../partials/footer %>

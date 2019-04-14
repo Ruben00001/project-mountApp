@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+<h1>Edit mountain entry</h1>
+
+<form class="form--login" action='/mountains/<%= mountain._id %>?_method=PUT' method='POST'>
+  <input class="input-group-text" type='text' value='<%= mountain.name %>' name='mountain[name]'>
+  <input class="input-group-text" type='text' value='<%= mountain.image %>' name='mountain[image]'>
+  <input class="input-group-text" type='text' value='<%= mountain.description %>' name='mountain[description]'>
+  <input class="btn btn-light" type='submit' value='Submit'>
+</form>
+
+<% include ../partials/footer %>
